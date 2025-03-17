@@ -7,12 +7,24 @@ class User {
     this.age = _age;
     this.location = _location;
   }
+
+  higherNumber(_person1, _person2) {
+    if (_person1.age > _person2.age) {
+      console.log(`${_person1.firstName} is older than ${_person2.firstName}`);
+    } else if (_person1.age < _person2.age) {
+      console.log(`${_person2.firstName} is older than ${_person1.firstName}`);
+    } else {
+      console.log(
+        `${_person1.firstName} and ${_person2.firstName} are the same age`
+      );
+    }
+  }
 }
 
-const person1 = new User("Jesse", "Pinkman", 30, "America");
-const person2 = new User("Hunter", "Bloodborne", 24, "Yharnam");
+const user1 = new User("Jesse", "Pinkman", 30, "America");
+const user2 = new User("Hunter", "Bloodborne", 24, "Yharnam");
 
-console.log(person2);
+user1.higherNumber(user1, user2);
 
 //2
 
