@@ -18,4 +18,16 @@ class Pet {
     this.species = _species;
     this.breed = _breed;
   }
+  hasSameOwner(otherPet) {
+    return this.ownerName === otherPet.ownerName;
+  }
 }
+
+const pet1 = new Pet("Mentina", "Hanzo", "Gatto", "Europeo");
+const pet2 = new Pet("Luna", "Hanzo", "Gatto", "Europeo");
+const pet3 = new Pet("Sam", "Alessandro", "Cane", "Pinscher");
+
+console.log(pet1);
+
+console.log(pet1.hasSameOwner(pet2));
+console.log(pet1.hasSameOwner(pet3));
