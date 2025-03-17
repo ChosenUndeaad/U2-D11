@@ -9,6 +9,11 @@ class User {
   }
 }
 
+const person1 = new User("Jesse", "Pinkman", 30, "America");
+const person2 = new User("Hunter", "Bloodborne", 24, "Yharnam");
+
+console.log(person2);
+
 //2
 
 class Pet {
